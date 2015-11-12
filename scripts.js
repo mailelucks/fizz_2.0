@@ -7,9 +7,10 @@ var m = parseFloat(n);
 console.log(m);
 console.log(typeof m);
 
-if ( (m % 1 === 0) && (typeof m === 'number') ) {
-
+if ( (m % 1 === 0) && (typeof m === 'number') ){
+console.log("here");
 	function fizzBuzz(m){
+		// console.log("here");
 		for (var i = 1; i <= n; i++) {
 			if ( (i % 3 === 0) && (i % 5 === 0) ){ 
 				var output = "FizzBuzz";
@@ -30,7 +31,8 @@ if ( (m % 1 === 0) && (typeof m === 'number') ) {
 		}
 	}; 
 
-} else {
+} 
+else {
 	
 	$('.list').append("Please refresh the page and enter a whole number with no decimals.");
 	
