@@ -1,8 +1,10 @@
 $(document).ready(function() {
 
 var n = prompt("Enter a Number!");
+var m = parseInt("n", 16);
+console.log(typeof m);
 
-function fizzBuzz(n){
+function fizzBuzz(m){
 	for (var i = 1; i <= n; i++) {
 		if ( (i % 3 === 0) && (i % 5 === 0) ){ 
 			var output = "FizzBuzz";
