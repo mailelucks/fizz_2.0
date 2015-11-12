@@ -7,7 +7,7 @@ var m = parseInt(n, 10);
 console.log(m);
 console.log(typeof m);
 
-if (typeof m !== 'number') {
+if (typeof m === 'number') {
 
 	function fizzBuzz(m){
 		for (var i = 1; i <= n; i++) {
@@ -32,7 +32,7 @@ if (typeof m !== 'number') {
 
 } else {
 	
-	$('.list').append("Please refresh the page and enter a number.");
+	$('.list').append("Please refresh the page and enter a whole number with no decimals.");
 	
 };
 
