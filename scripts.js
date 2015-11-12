@@ -3,11 +3,11 @@ $(document).ready(function() {
 var n = prompt("Enter a Number!");
 console.log(n);
 console.log(typeof n);
-var m = parseInt(n, 10);
+var m = parseFloat(n);
 console.log(m);
 console.log(typeof m);
 
-if (typeof m === 'number') {
+if ( (m % 1 === 0) && (typeof m === 'number') ) {
 
 	function fizzBuzz(m){
 		for (var i = 1; i <= n; i++) {
