@@ -1,24 +1,24 @@
 $(document).ready(function() {
 
-var DEBUG_MODE = false;
+var DEBUG_MODE = true;
 var debug = function(msg) {
     if (DEBUG_MODE == true) {
         console.log("DEBUG:", msg);
     }
 }
 
-var n = prompt("Enter a Number!");
-debug(n);
-debug(typeof n);
-var m = parseFloat(n);
-debug(m);
-debug(typeof m);
+var initialInput = prompt("Enter a Number!");
+debug(initialInput);
+debug(typeof initialInput);
+var roundedInput = parseFloat(initialInput);
+debug(roundedInput);
+debug(typeof roundedInput);
 
-function fizzBuzz(m){
+function fizzBuzz(roundedInput){
 debug("here1");
-	if (m % 1 === 0){
+	if (roundedInput % 1 === 0){
 		debug("here2");
-		for (var i = 1; i <= n; i++) {
+		for (var i = 1; i <= roundedInput; i++) {
 			debug("here3");
 			if ( (i % 3 === 0) && (i % 5 === 0) ){ 
 				var output = "FizzBuzz";
@@ -45,6 +45,7 @@ debug("here1");
 	};
 };
 
-fizzBuzz(n);
+fizzBuzz(roundedInput);
+
 
 });
